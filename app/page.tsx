@@ -70,6 +70,8 @@ const toolGroups = [
   ["FABRICATION", "3D 打印", "V-Ray", "数字制造"],
 ];
 
+const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/+$/, "");
+
 export default function Home() {
   return (
     <>
@@ -115,7 +117,7 @@ export default function Home() {
               <a className="button button-primary" href="#work">
                 查看代表项目 <span aria-hidden="true">↓</span>
               </a>
-              <a className="button button-ghost" href="/李昌朔_简历.pdf" download>
+              <a className="button button-ghost" href={`${basePath}/李昌朔_简历.pdf`} download>
                 下载简历 <span aria-hidden="true">↗</span>
               </a>
             </div>
