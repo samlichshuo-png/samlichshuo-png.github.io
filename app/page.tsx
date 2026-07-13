@@ -42,7 +42,7 @@ const projects = [
 const experiences = [
   {
     period: "2026.05—至今",
-    company: "曲率流动深圳有限公司",
+    company: "CrvFlow",
     role: "ORCA AI 开发",
     detail: "参与 ORCA AI 的产品开发与功能迭代，围绕自然语言到精确、可编辑、可制造 3D CAD 的工作流持续落地。",
     current: true,
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="hero-data">
             <div>
               <span className="data-label">EXPERIENCE.LOG</span>
-              <p><em>NOW</em> 曲率流动深圳有限公司 · ORCA AI 开发</p>
+              <p><em>NOW</em> CrvFlow · ORCA AI 开发</p>
             </div>
             <div>
               <span className="data-label">TOOLSTACK.ARRAY</span>
