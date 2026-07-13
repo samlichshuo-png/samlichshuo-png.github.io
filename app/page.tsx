@@ -1,6 +1,17 @@
 const projects = [
   {
     index: "01",
+    type: "AI CAD / PRODUCT",
+    title: "ORCA · 从文本到可制造 CAD",
+    description:
+      "参与 ORCA AI 的产品开发，将自然语言设计意图转化为精确、可编辑、可制造且具备装配信息的 3D CAD 模型，并衔接工程图、制作指南与 CNC / 3D 打印等生产流程。",
+    meta: "Natural Language / AI CAD / Editable Geometry / Manufacturing",
+    accent: "orca",
+    featured: true,
+    href: "https://orca-cad.com/",
+  },
+  {
+    index: "02",
     type: "GENERATIVE SYSTEM",
     title: "鞋类晶格生成系统",
     description:
@@ -9,7 +20,7 @@ const projects = [
     accent: "lime",
   },
   {
-    index: "02",
+    index: "03",
     type: "OPTIMIZATION",
     title: "幕墙成本优化",
     description:
@@ -18,7 +29,7 @@ const projects = [
     accent: "blue",
   },
   {
-    index: "03",
+    index: "04",
     type: "TOPOLOGY",
     title: "Ameba 结构拓扑优化",
     description:
@@ -33,7 +44,7 @@ const experiences = [
     period: "2026.05—至今",
     company: "曲率流动深圳有限公司",
     role: "ORCA AI 开发",
-    detail: "负责 ORCA AI 的产品开发与功能迭代，推动 AI 能力在设计工作流中的落地。",
+    detail: "参与 ORCA AI 的产品开发与功能迭代，围绕自然语言到精确、可编辑、可制造 3D CAD 的工作流持续落地。",
     current: true,
   },
   {
@@ -111,7 +122,7 @@ export default function Home() {
               参数化设计 <b>×</b> AI <b>×</b> 数字制造
             </p>
             <p className="hero-intro">
-              把复杂的设计问题转化为可计算、可迭代、可制造的系统——从几何生成和性能优化，到面向设计工作流的智能体产品。
+              把复杂的设计问题转化为可计算、可迭代、可制造的系统——从 ORCA 的自然语言生成 CAD，到几何生成、性能优化与数字制造。
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">
@@ -124,8 +135,9 @@ export default function Home() {
           </div>
 
           <div className="node-field" aria-hidden="true">
-            <div className="field-label field-label-top">SYSTEM / GENERATIVE<br />ITERATION 042</div>
-            <div className="field-label field-label-bottom">INPUT → LOGIC → FORM<br />REALTIME PIPELINE</div>
+            <div className="field-label field-label-top">ORCA / AI CAD<br />ITERATION 042</div>
+            <div className="field-label field-label-bottom">TEXT → INTENT → CAD → BUILD<br />REALTIME PIPELINE</div>
+            <span className="field-scan" />
             <span className="orbit orbit-a" />
             <span className="orbit orbit-b" />
             <span className="connector connector-a" />
@@ -147,23 +159,26 @@ export default function Home() {
             </div>
             <div>
               <span className="data-label">TOOLSTACK.ARRAY</span>
-              <p>Grasshopper / Rhino / GHPython / Python / Agent / MCP</p>
+              <p>AI CAD / Grasshopper / Rhino / GHPython / Python / Agent / MCP</p>
             </div>
           </div>
         </section>
 
         <section className="section projects" id="work" aria-labelledby="projects-title">
           <div className="section-heading">
-            <p className="section-index">[ 01—03 ]</p>
+            <p className="section-index">[ 01—04 ]</p>
             <div>
               <h2 id="projects-title">Selected Systems</h2>
-              <p>从几何逻辑到真实生产 · 2024—2026</p>
+              <p>从自然语言生成 CAD 到几何优化与真实生产 · 2024—2026</p>
             </div>
           </div>
 
           <div className="project-grid">
             {projects.map((project) => (
-              <article className={`project-card project-${project.accent}`} key={project.index}>
+              <article
+                className={`project-card project-${project.accent}${project.featured ? " project-featured" : ""}`}
+                key={project.index}
+              >
                 <div className="project-topline">
                   <span>P.{project.index}</span>
                   <span>{project.type}</span>
@@ -175,7 +190,13 @@ export default function Home() {
                 <p>{project.description}</p>
                 <div className="project-meta">
                   <span>{project.meta}</span>
-                  <span aria-hidden="true">↗</span>
+                  {project.href ? (
+                    <a href={project.href} target="_blank" rel="noreferrer">
+                      访问 ORCA <span aria-hidden="true">↗</span>
+                    </a>
+                  ) : (
+                    <span aria-hidden="true">↗</span>
+                  )}
                 </div>
               </article>
             ))}

@@ -15,17 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lichangshuo.com"),
   title: "李昌朔｜参数化设计师 & ORCA AI 开发",
-  description: "李昌朔的个人作品集：参数化设计、AI 产品开发与数字制造。",
+  description: "李昌朔的个人作品集：ORCA Text-to-CAD、参数化设计、AI 产品开发与数字制造。",
   openGraph: {
     title: "李昌朔｜构建下一种设计逻辑",
-    description: "参数化设计 × AI × 数字制造",
+    description: "ORCA Text-to-CAD × 参数化设计 × AI × 数字制造",
     type: "website",
     locale: "zh_CN",
   },
   twitter: {
     card: "summary",
     title: "李昌朔｜构建下一种设计逻辑",
-    description: "参数化设计 × AI × 数字制造",
+    description: "ORCA Text-to-CAD × 参数化设计 × AI × 数字制造",
   },
 };
 
