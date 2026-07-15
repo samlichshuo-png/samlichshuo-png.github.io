@@ -558,7 +558,6 @@ export default function Home() {
                   height={800}
                   unoptimized
                 />
-                <span className="profile-reticle" aria-hidden="true" />
                 <figcaption>
                   <span>PROFILE / 01</span>
                   <span>{ui.portraitLabel}</span>
