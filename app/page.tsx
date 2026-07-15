@@ -234,6 +234,8 @@ const interfaceCopy = {
     experienceSubtitle: "参数化设计、结构优化与 AI 产品开发",
     aboutTitle: "设计、代码与制造的交叉现场",
     aboutLead: "我专注于参数化与计算设计，并把 Python、Agent、CadQuery 与 MCP 工作流引入研发。目标不是只生成一个形体，而是建立一套可以被复用、调试并持续演化的设计系统。",
+    portraitAlt: "李昌朔的黑白个人肖像",
+    portraitLabel: "李昌朔 · 2026",
     educationSchool: "新南威尔士大学（UNSW）",
     educationDetail: "本科 · 参数化设计 · 2023.01—2026.12",
     toolsLabel: "工具与能力",
@@ -265,6 +267,8 @@ const interfaceCopy = {
     experienceSubtitle: "Parametric design, structural optimization and AI product development",
     aboutTitle: "Where design, code and fabrication meet",
     aboutLead: "I work across parametric and computational design, bringing Python, agents, CadQuery and MCP workflows into product development. The goal is not a single form, but a reusable system that can be tested, debugged and continuously evolved.",
+    portraitAlt: "Black-and-white portrait of Li Changshuo",
+    portraitLabel: "LI CHANGSHUO · 2026",
     educationSchool: "University of New South Wales (UNSW)",
     educationDetail: "Bachelor's · Computational / Parametric Design · Jan 2023—Dec 2026",
     toolsLabel: "Tools and capabilities",
@@ -545,11 +549,27 @@ export default function Home() {
             <p className="section-index">[ PROFILE.SYS ]</p>
             <h2 id="about-title">{ui.aboutTitle}</h2>
             <p className="about-lead">{ui.aboutLead}</p>
-            <div className="education">
-              <span>EDUCATION</span>
-              <div>
-                <strong>{ui.educationSchool}</strong>
-                <p>{ui.educationDetail}</p>
+            <div className="profile-details">
+              <figure className="profile-portrait">
+                <Image
+                  src={`${basePath}/profile-portrait.webp`}
+                  alt={ui.portraitAlt}
+                  width={1000}
+                  height={800}
+                  unoptimized
+                />
+                <span className="profile-reticle" aria-hidden="true" />
+                <figcaption>
+                  <span>PROFILE / 01</span>
+                  <span>{ui.portraitLabel}</span>
+                </figcaption>
+              </figure>
+              <div className="education">
+                <span>EDUCATION</span>
+                <div>
+                  <strong>{ui.educationSchool}</strong>
+                  <p>{ui.educationDetail}</p>
+                </div>
               </div>
             </div>
           </div>
