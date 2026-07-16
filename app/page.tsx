@@ -234,7 +234,7 @@ const interfaceCopy = {
     experienceSubtitle: "参数化设计、结构优化与 AI 产品开发",
     aboutTitle: "设计、代码与制造的交叉现场",
     aboutLead: "我专注于参数化与计算设计，并把 Python、Agent、CadQuery 与 MCP 工作流引入研发。目标不是只生成一个形体，而是建立一套可以被复用、调试并持续演化的设计系统。",
-    portraitAlt: "李昌朔的黑白个人肖像",
+    portraitAlt: "李昌朔，身着黑色西装的个人肖像",
     portraitLabel: "李昌朔 · 2026",
     educationSchool: "新南威尔士大学（UNSW）",
     educationDetail: "本科 · 参数化设计 · 2023.01—2026.12",
@@ -267,7 +267,7 @@ const interfaceCopy = {
     experienceSubtitle: "Parametric design, structural optimization and AI product development",
     aboutTitle: "Where design, code and fabrication meet",
     aboutLead: "I work across parametric and computational design, bringing Python, agents, CadQuery and MCP workflows into product development. The goal is not a single form, but a reusable system that can be tested, debugged and continuously evolved.",
-    portraitAlt: "Black-and-white portrait of Li Changshuo",
+    portraitAlt: "Portrait of Li Changshuo in a black suit",
     portraitLabel: "LI CHANGSHUO · 2026",
     educationSchool: "University of New South Wales (UNSW)",
     educationDetail: "Bachelor's · Computational / Parametric Design · Jan 2023—Dec 2026",
@@ -448,23 +448,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="node-field" aria-hidden="true">
-            <div className="field-label field-label-top">ORCA / ORCAFLOW<br />ITERATION 042</div>
-            <div className="field-label field-label-bottom">TEXT → INTENT → CAD → BUILD<br />REPLAYABLE PIPELINE</div>
-            <span className="field-scan" />
-            <span className="orbit orbit-a" />
-            <span className="orbit orbit-b" />
-            <span className="connector connector-a" />
-            <span className="connector connector-b" />
-            <span className="data-dot dot-a" />
-            <span className="data-dot dot-b" />
-            <span className="data-dot dot-c" />
-            <div className="core-node">
-              <span>CAD_SYSTEM</span>
-              <strong>[ ACTIVE ]</strong>
-            </div>
-            <span className="coordinate">X 114.0579° / Y 22.5431°</span>
-          </div>
+          <figure className="hero-portrait">
+            <Image
+              src={`${basePath}/hero-portrait.webp`}
+              alt={ui.portraitAlt}
+              fill
+              priority
+              unoptimized
+              sizes="(max-width: 820px) calc(100vw - 48px), 34vw"
+            />
+            <figcaption className="field-label field-label-top">
+              PROFILE / 2026<br />{ui.portraitLabel}
+            </figcaption>
+            <span className="field-label field-label-bottom" aria-hidden="true">
+              COMPUTATIONAL DESIGN<br />AI CAD / DIGITAL FABRICATION
+            </span>
+            <span className="field-scan" aria-hidden="true" />
+            <span className="portrait-bracket portrait-bracket-top" aria-hidden="true" />
+            <span className="portrait-bracket portrait-bracket-bottom" aria-hidden="true" />
+            <span className="coordinate" aria-hidden="true">X 114.0579° / Y 22.5431°</span>
+          </figure>
 
           <div className="hero-data">
             <div>
@@ -549,26 +552,11 @@ export default function Home() {
             <p className="section-index">[ PROFILE.SYS ]</p>
             <h2 id="about-title">{ui.aboutTitle}</h2>
             <p className="about-lead">{ui.aboutLead}</p>
-            <div className="profile-details">
-              <figure className="profile-portrait">
-                <Image
-                  src={`${basePath}/profile-portrait.webp`}
-                  alt={ui.portraitAlt}
-                  width={1000}
-                  height={800}
-                  unoptimized
-                />
-                <figcaption>
-                  <span>PROFILE / 01</span>
-                  <span>{ui.portraitLabel}</span>
-                </figcaption>
-              </figure>
-              <div className="education">
-                <span>EDUCATION</span>
-                <div>
-                  <strong>{ui.educationSchool}</strong>
-                  <p>{ui.educationDetail}</p>
-                </div>
+            <div className="education">
+              <span>EDUCATION</span>
+              <div>
+                <strong>{ui.educationSchool}</strong>
+                <p>{ui.educationDetail}</p>
               </div>
             </div>
           </div>
