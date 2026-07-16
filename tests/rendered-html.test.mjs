@@ -46,7 +46,7 @@ test("ships every project and social-preview image", async () => {
     "public/projects/curtain-wall-aluminum.webp",
     "public/projects/boxia-office-concept.webp",
     "public/projects/orcaflow-logo.webp",
-    "public/hero-portrait.webp",
+    "public/hero-portrait-2026.webp",
   ];
 
   await Promise.all(assetPaths.map((assetPath) => access(new URL(assetPath, root))));
@@ -59,7 +59,7 @@ test("ships every project and social-preview image", async () => {
   assert.match(page, /portfolio-language/);
   assert.match(page, /Switch language/);
   assert.match(page, /OrcaFlow · Replayable Node-Based CAD/);
-  assert.match(page, /hero-portrait\.webp/);
+  assert.match(page, /hero-portrait-2026\.webp/);
   assert.doesNotMatch(page, /profile-portrait\.webp/);
   assert.match(layout, /summary_large_image/);
   assert.match(layout, /og\.webp/);

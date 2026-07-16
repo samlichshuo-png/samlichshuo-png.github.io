@@ -234,7 +234,7 @@ const interfaceCopy = {
     experienceSubtitle: "参数化设计、结构优化与 AI 产品开发",
     aboutTitle: "设计、代码与制造的交叉现场",
     aboutLead: "我专注于参数化与计算设计，并把 Python、Agent、CadQuery 与 MCP 工作流引入研发。目标不是只生成一个形体，而是建立一套可以被复用、调试并持续演化的设计系统。",
-    portraitAlt: "李昌朔，身着黑色西装的个人肖像",
+    portraitAlt: "李昌朔，身着深灰色衬衫外套的个人肖像",
     portraitLabel: "李昌朔 · 2026",
     educationSchool: "新南威尔士大学（UNSW）",
     educationDetail: "本科 · 参数化设计 · 2023.01—2026.12",
@@ -267,7 +267,7 @@ const interfaceCopy = {
     experienceSubtitle: "Parametric design, structural optimization and AI product development",
     aboutTitle: "Where design, code and fabrication meet",
     aboutLead: "I work across parametric and computational design, bringing Python, agents, CadQuery and MCP workflows into product development. The goal is not a single form, but a reusable system that can be tested, debugged and continuously evolved.",
-    portraitAlt: "Portrait of Li Changshuo in a black suit",
+    portraitAlt: "Portrait of Li Changshuo in a charcoal overshirt",
     portraitLabel: "LI CHANGSHUO · 2026",
     educationSchool: "University of New South Wales (UNSW)",
     educationDetail: "Bachelor's · Computational / Parametric Design · Jan 2023—Dec 2026",
@@ -450,7 +450,7 @@ export default function Home() {
 
           <figure className="hero-portrait">
             <Image
-              src={`${basePath}/hero-portrait.webp`}
+              src={`${basePath}/hero-portrait-2026.webp`}
               alt={ui.portraitAlt}
               fill
               priority
