@@ -1,0 +1,7 @@
+{
+  "name": "lichangshuo-portfolio",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build:pages",
+  "outputDirectory": "./out",
+  "nodeVersion": "22.11.0"
+}
