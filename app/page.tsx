@@ -130,8 +130,11 @@ const projects: Project[] = [
     meta: localized("Ameba / Rhino / 网格重建 / 3D 打印", "Ameba / Rhino / Mesh Reconstruction / 3D Printing"),
     accent: "orange",
     visual: {
-      kind: "ameba",
-      alt: localized("拓扑优化网格与应力路径抽象图形", "Abstract topology-optimization mesh and stress-path graphic"),
+      kind: "image",
+      src: "/projects/ameba-topology-prototype.webp",
+      alt: localized("Ameba 拓扑优化结构的 3D 打印实体样件", "3D-printed physical prototype of an Ameba topology-optimized structure"),
+      position: "50% 50%",
+      badge: localized("3D 打印样件", "3D Printed Prototype"),
     },
   },
   {
