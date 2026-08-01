@@ -24,11 +24,11 @@ const notoSansSC = Noto_Sans_SC({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lichangshuo.com"),
-  title: "李昌朔 / Li Changshuo｜计算设计与 AI CAD",
-  description: "李昌朔的双语作品集：ORCA、OrcaFlow、参数化设计、AI CAD 与数字制造。",
+  title: "李昌朔 / Li Changshuo｜应用工程与计算设计",
+  description: "李昌朔的双语作品集：3D 打印软件开发、结构设计、参数化设计、AI CAD 与数字制造。",
   openGraph: {
-    title: "李昌朔 / Li Changshuo｜构建下一种设计逻辑",
-    description: "ORCA × OrcaFlow × 参数化设计 × AI CAD × 数字制造",
+    title: "李昌朔 / Li Changshuo｜应用工程与计算设计",
+    description: "3D 打印软件 × 结构设计 × 参数化设计 × AI CAD × 数字制造",
     type: "website",
     locale: "zh_CN",
     images: [
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "李昌朔 / Li Changshuo｜构建下一种设计逻辑",
-    description: "ORCA × OrcaFlow × 参数化设计 × AI CAD × 数字制造",
+    title: "李昌朔 / Li Changshuo｜应用工程与计算设计",
+    description: "3D 打印软件 × 结构设计 × 参数化设计 × AI CAD × 数字制造",
     images: ["/og.webp"],
   },
 };

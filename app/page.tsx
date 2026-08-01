@@ -46,8 +46,8 @@ const projects: Project[] = [
     type: "AI CAD / PRODUCT",
     title: localized("ORCA · 从文本到可制造 CAD", "ORCA · From Text to Buildable CAD"),
     description: localized(
-      "参与 ORCA AI 的产品开发，将自然语言设计意图转化为精确、可编辑、可制造且具备装配信息的 3D CAD 模型，并衔接工程图、制作指南与 CNC / 3D 打印等生产流程。",
-      "Contributing to ORCA AI, turning natural-language design intent into precise, editable and manufacturable 3D CAD with assembly intelligence, drawings, build guides and CNC / 3D-printing workflows.",
+      "曾参与 ORCA AI 的产品开发，将自然语言设计意图转化为精确、可编辑、可制造且具备装配信息的 3D CAD 模型，并衔接工程图、制作指南与 CNC / 3D 打印等生产流程。",
+      "Contributed to ORCA AI, turning natural-language design intent into precise, editable and manufacturable 3D CAD with assembly intelligence, drawings, build guides and CNC / 3D-printing workflows.",
     ),
     meta: localized(
       "自然语言 / AI CAD / 可编辑几何 / 制造",
@@ -159,14 +159,23 @@ const projects: Project[] = [
 
 const experiences = [
   {
-    period: localized("2026.05—至今", "May 2026—Present"),
+    period: localized("2026.08—至今", "Aug 2026—Present"),
+    company: localized("上海复志有限公司", "Shanghai Fuzhi Co., Ltd."),
+    role: localized("应用工程师 · 安踏供应商驻场", "Application Engineer · ANTA Supplier Team (On-site)"),
+    detail: localized(
+      "工作于福建泉州晋江，以供应商团队成员身份驻场安踏，负责 3D 打印软件开发与结构设计。",
+      "Based on-site at ANTA in Jinjiang, Quanzhou as part of a supplier team, developing 3D-printing software and structural designs.",
+    ),
+    current: true,
+  },
+  {
+    period: localized("2026.05—2026.07", "May 2026—Jul 2026"),
     company: localized("CrvFlow", "CrvFlow"),
     role: localized("ORCA AI 开发", "ORCA AI Developer"),
     detail: localized(
       "参与 ORCA AI 的产品开发与功能迭代，围绕自然语言到精确、可编辑、可制造 3D CAD 的工作流持续落地。",
-      "Developing and iterating ORCA AI workflows that turn natural language into precise, editable and manufacturable 3D CAD.",
+      "Developed and iterated ORCA AI workflows that turn natural language into precise, editable and manufacturable 3D CAD.",
     ),
-    current: true,
   },
   {
     period: localized("2026.03—2026.05.22", "Mar 2026—May 22, 2026"),
@@ -208,10 +217,10 @@ const experiences = [
 
 const toolGroups = [
   { label: "PARAMETRIC", items: localized("Grasshopper · Rhino · GHPython", "Grasshopper · Rhino · GHPython") },
-  { label: "CODE", items: localized("Python · 流程脚本 · 工具封装", "Python · Workflow Scripting · Tooling") },
+  { label: "CODE", items: localized("Python · 3D 打印软件开发 · 工具封装", "Python · 3D-printing Software · Tooling") },
   { label: "AI / AGENT", items: localized("ORCA AI · Claude Code · Codex", "ORCA AI · Claude Code · Codex") },
   { label: "CAD SYSTEM", items: localized("CadQuery · OpenCascade · Three.js", "CadQuery · OpenCascade · Three.js") },
-  { label: "FABRICATION", items: localized("3D 打印 · V-Ray · 数字制造", "3D Printing · V-Ray · Digital Fabrication") },
+  { label: "FABRICATION", items: localized("3D 打印 · 结构设计 · 数字制造", "3D Printing · Structural Design · Digital Fabrication") },
 ];
 
 const interfaceCopy = {
@@ -222,21 +231,21 @@ const interfaceCopy = {
     nav: ["项目", "履历", "关于", "联系"],
     languageLabel: "切换语言",
     languageChanged: "当前语言：中文",
-    eyebrow: "计算设计师 / ORCA AI 开发者",
+    eyebrow: "应用工程师 / 计算设计师",
     heroName: "李昌朔",
     heroOutline: "构建下一种",
     heroMain: "设计逻辑",
     heroLede: ["参数化设计", "AI", "数字制造"],
-    heroIntro: "把复杂设计问题转化为可计算、可迭代、可制造的系统——从 ORCA 与 OrcaFlow 的智能 CAD，到几何生成、性能优化与数字制造。",
+    heroIntro: "把复杂设计问题转化为可计算、可迭代、可制造的系统——从 3D 打印软件开发与结构设计，到智能 CAD、几何生成与数字制造。",
     workButton: "查看代表项目",
     resumeButton: "下载中文简历",
-    currentRole: "CrvFlow · ORCA AI 开发",
+    currentRole: "上海复志 · 应用工程师（驻场安踏）",
     projectsTitle: "Selected Systems",
     projectsSubtitle: "从智能 CAD 与独立软件，到几何优化和真实制造 · 2024—2026",
     experienceTitle: "工作与实习经历",
-    experienceSubtitle: "参数化设计、结构优化与 AI 产品开发",
+    experienceSubtitle: "3D 打印软件、结构设计与计算设计研发",
     aboutTitle: "设计、代码与制造的交叉现场",
-    aboutLead: "我专注于参数化与计算设计，并把 Python、Agent、CadQuery 与 MCP 工作流引入研发。目标不是只生成一个形体，而是建立一套可以被复用、调试并持续演化的设计系统。",
+    aboutLead: "我目前从事 3D 打印软件开发与结构设计，并持续把 Python、参数化建模、Agent 与 CadQuery 工作流引入研发。目标不是只生成一个形体，而是建立一套可以被复用、调试并持续演化的设计系统。",
     portraitAlt: "李昌朔，身着深灰色衬衫外套的个人肖像",
     portraitLabel: "李昌朔 · 2026",
     educationSchool: "新南威尔士大学（UNSW）",
@@ -244,9 +253,9 @@ const interfaceCopy = {
     toolsLabel: "工具与能力",
     contactTitleA: "一起构建下一种",
     contactTitleB: "设计工作流",
-    footerLocation: "常驻上海 / 支持线上协作",
-    metadataTitle: "李昌朔｜参数化设计师 & ORCA AI 开发",
-    metadataDescription: "李昌朔的个人作品集：ORCA、OrcaFlow、参数化设计、AI CAD 与数字制造。",
+    footerLocation: "工作于泉州晋江 / 支持线上协作",
+    metadataTitle: "李昌朔｜应用工程师 & 计算设计师",
+    metadataDescription: "李昌朔的个人作品集：3D 打印软件开发、结构设计、参数化设计、AI CAD 与数字制造。",
   },
   en: {
     skip: "Skip to main content",
@@ -255,21 +264,21 @@ const interfaceCopy = {
     nav: ["Work", "Experience", "About", "Contact"],
     languageLabel: "Switch language",
     languageChanged: "Current language: English",
-    eyebrow: "COMPUTATIONAL DESIGNER / ORCA AI DEVELOPER",
+    eyebrow: "APPLICATION ENGINEER / COMPUTATIONAL DESIGNER",
     heroName: "LI CHANGSHUO",
     heroOutline: "BUILDING THE NEXT",
     heroMain: "DESIGN LOGIC",
     heroLede: ["PARAMETRIC DESIGN", "AI", "DIGITAL FABRICATION"],
-    heroIntro: "I turn complex design problems into computable, iterative and manufacturable systems—from intelligent CAD with ORCA and OrcaFlow to geometry generation, performance optimization and digital fabrication.",
+    heroIntro: "I turn complex design problems into computable, iterative and manufacturable systems—from 3D-printing software and structural design to intelligent CAD, geometry generation and digital fabrication.",
     workButton: "Explore selected work",
     resumeButton: "Download résumé (CN)",
-    currentRole: "CrvFlow · ORCA AI Developer",
+    currentRole: "Shanghai Fuzhi · Application Engineer (On-site at ANTA)",
     projectsTitle: "Selected Systems",
     projectsSubtitle: "From intelligent CAD and independent software to geometry optimization and real fabrication · 2024—2026",
     experienceTitle: "Work & Experience",
-    experienceSubtitle: "Parametric design, structural optimization and AI product development",
+    experienceSubtitle: "3D-printing software, structural design and computational design R&D",
     aboutTitle: "Where design, code and fabrication meet",
-    aboutLead: "I work across parametric and computational design, bringing Python, agents, CadQuery and MCP workflows into product development. The goal is not a single form, but a reusable system that can be tested, debugged and continuously evolved.",
+    aboutLead: "I currently develop 3D-printing software and structural designs while bringing Python, parametric modeling, agents and CadQuery workflows into R&D. The goal is not a single form, but a reusable system that can be tested, debugged and continuously evolved.",
     portraitAlt: "Portrait of Li Changshuo in a charcoal overshirt",
     portraitLabel: "LI CHANGSHUO · 2026",
     educationSchool: "University of New South Wales (UNSW)",
@@ -277,9 +286,9 @@ const interfaceCopy = {
     toolsLabel: "Tools and capabilities",
     contactTitleA: "LET'S BUILD THE NEXT",
     contactTitleB: "DESIGN WORKFLOW",
-    footerLocation: "BASED IN SHANGHAI / AVAILABLE ONLINE",
-    metadataTitle: "Li Changshuo | Computational Designer & ORCA AI Developer",
-    metadataDescription: "Li Changshuo's portfolio: ORCA, OrcaFlow, parametric design, AI CAD and digital fabrication.",
+    footerLocation: "WORKING IN JINJIANG, QUANZHOU / AVAILABLE ONLINE",
+    metadataTitle: "Li Changshuo | Application Engineer & Computational Designer",
+    metadataDescription: "Li Changshuo's portfolio: 3D-printing software development, structural design, parametric design, AI CAD and digital fabrication.",
   },
 };
 
@@ -416,7 +425,7 @@ export default function Home() {
         <div className="header-actions">
           <span className="availability">
             <span className="status-dot" aria-hidden="true" />
-            SHANGHAI / CN
+            JINJIANG / CN
           </span>
           <div className="language-switcher" role="group" aria-label={ui.languageLabel}>
             <button type="button" aria-pressed={language === "zh"} onClick={() => setLanguage("zh")}>中</button>
@@ -469,7 +478,7 @@ export default function Home() {
             <span className="field-scan" aria-hidden="true" />
             <span className="portrait-bracket portrait-bracket-top" aria-hidden="true" />
             <span className="portrait-bracket portrait-bracket-bottom" aria-hidden="true" />
-            <span className="coordinate" aria-hidden="true">X 114.0579° / Y 22.5431°</span>
+            <span className="coordinate" aria-hidden="true">X 118.5789° / Y 24.8073°</span>
           </figure>
 
           <div className="hero-data">

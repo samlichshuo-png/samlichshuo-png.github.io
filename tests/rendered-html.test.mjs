@@ -33,6 +33,9 @@ test("server-renders the bilingual portfolio", async () => {
   const html = await response.text();
   assert.match(html, /李昌朔 \/ Li Changshuo/);
   assert.match(html, /OrcaFlow/);
+  assert.match(html, /上海复志有限公司/);
+  assert.match(html, /应用工程师/);
+  assert.match(html, /安踏供应商驻场/);
   assert.match(html, /CrvFlow/);
   assert.match(html, /Selected Systems/);
   assert.match(html, /aria-pressed="true"/);
@@ -58,6 +61,15 @@ test("ships every project and social-preview image", async () => {
 
   assert.match(page, /portfolio-language/);
   assert.match(page, /Switch language/);
+  assert.match(page, /Shanghai Fuzhi Co\., Ltd\./);
+  assert.match(page, /Application Engineer · ANTA Supplier Team \(On-site\)/);
+  assert.match(page, /工作于福建泉州晋江/);
+  assert.match(page, /2026\.08—至今/);
+  assert.match(page, /2026\.05—2026\.07/);
+  assert.equal((page.match(/current: true/g) ?? []).length, 1);
+  assert.ok(page.indexOf("上海复志有限公司") < page.indexOf("CrvFlow"));
+  assert.doesNotMatch(page, /currentRole: "CrvFlow/);
+  assert.doesNotMatch(page, /SHANGHAI \/ CN/);
   assert.match(page, /OrcaFlow · Replayable Node-Based CAD/);
   assert.match(page, /hero-portrait-2026\.webp/);
   assert.doesNotMatch(page, /profile-portrait\.webp/);
